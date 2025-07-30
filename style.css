@@ -1,0 +1,159 @@
+:root {
+        --primary-color: #fffceb;
+            --secondary-color: #b8e6e7;
+                --text-color: #000000;
+                    --link-color: #4f05fc;
+                        --background-color: #ffffff;
+                            --button-hover-color: #c504ff;
+                                --font-body: "Chocolate Classical Sans", serif;
+                                    --font-titulo: "Rakkas", serif;
+                                        --card-color-start: rgb(0, 255, 255);
+                                            --card-color-end: rgba(88, 169, 235, 0.6);
+}
+
+body {
+        background-image: url('img/library-background.jpg');
+            background-size: cover;
+                background-attachment: fixed;
+                    font-family: var(--font-body);
+                        margin: 0;
+                            padding: 0;
+}
+
+#container {
+        display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+                gap: 20px;
+                    padding: 20px;
+                        margin-bottom: 120px;
+}
+
+.cabecalho {
+        padding: 15px;
+            background-color: rgba(120, 228, 255, 0.822);
+                border-radius: 10px;
+                    font-size: 1.6vw;
+                        text-align: center;
+                            font-family: var(--font-titulo);
+                                margin: 20px;
+                                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cabecalho p {
+        color: #c94e4e;
+            text-decoration: none;
+                font-size: 1rem;
+}
+
+.titulo h2 {
+        margin: 0;
+}
+
+.mudar {
+        color: red;
+            text-decoration: line-through;
+                font-weight: bold;
+                    font-size: 1.3rem;
+}
+
+/* Estilo base dos cartões */
+.cartao1, .cartao2, .cartao3, .cartao4, .cartao5, .cartao6, .cartao7, .cartao8, .cartao9 {
+        color: red;
+            padding: 10px;
+                background: linear-gradient(to bottom, var(--card-color-start), var(--card-color-end));
+                    border-radius: 10px;
+                        border: 2px solid #000;
+                            max-width: 100%;
+                                transform-style: preserve-3d;
+                                    transition: transform 0.8s ease, box-shadow 0.3s ease;
+                                        position: relative;
+                                            cursor: pointer;
+                                                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cartao:hover {
+        transform: scale(1.03);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cartao.flipped .cartao1,
+.cartao.flipped .cartao2,
+.cartao.flipped .cartao3,
+.cartao.flipped .cartao4,
+.cartao.flipped .cartao5,
+.cartao.flipped .cartao6,
+.cartao.flipped .cartao7,
+.cartao.flipped .cartao8,
+.cartao.flipped .cartao9 {
+        transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+        backface-visibility: hidden;
+            font-size: 1rem;
+                word-wrap: break-word;
+                    overflow: hidden;
+                        line-height: 1.5;
+                            padding: 10px;
+                                border-radius: 10px;
+                                    min-height: 180px;
+}
+
+.card-front {
+        background-color: rgba(255, 255, 255, 0.8);
+}
+
+.card-back {
+        transform: rotateY(180deg);
+            background-color: rgba(255, 255, 255, 0.95);
+                text-decoration: underline;
+}
+
+.design-conteudo {
+        font-weight: bold;
+            margin-bottom: 10px;
+                font-size: 1.1rem;
+                    color: #000;
+}
+
+/* Rodapé */
+footer {
+        background-color: #000000;
+            color: #ffffff;
+                padding: 15px;
+                    border-radius: 0;
+                        position: fixed;
+                            bottom: 0;
+                                width: 100%;
+                                    text-align: center;
+                                        font-size: 0.9rem;
+                                            z-index: 10;
+}
+
+.mark a {
+        color: aqua;
+            text-decoration: none;
+}
+
+.mark a:hover {
+        color: deepskyblue;
+            text-decoration: underline;
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
